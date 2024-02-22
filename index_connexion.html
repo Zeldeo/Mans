@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/jpg" href="images/icone.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/hmm.css">
+    <title>Connexion</title>
+</head>
+    <body class="log_sign">
+        
+        <nav class="barre_log_sign">
+            <div class="arrow" onclick="goBack()"></div>
+        </nav>
+        
+        <form>
+            <img id="logo_form" src="images/icone.jpg">
+            <h3 id="connexion">Se connecter aux 24H du Mans</h3>
+            <p id="co_para">Connectez-vous avec votre compte 24H du Mans, pour bénéficer de rien.</p>
+            <div>
+                <label for="username">Email :</label>
+                <div>
+                    <input type="email" id="email" pattern=".+@example\.com" size="30" required />
+
+                </div>
+                <label for="pass">Mot de passe :</label>
+                <div>
+                    <input type="password" id="pass" name="password" minlength="8" required />
+        
+                </div>
+                <div class="button disabled">Connexion</div>
+            </div>
+            <a class="compte" href="index_inscription.html">Vous n'avez pas de compte ?</a>
+        </form>
+        <script>
+            function goBack() {
+              window.history.back();
+            }
+
+            $(document).ready(function(){
+                $(".disabled").bind("contextmenu",
+            function(e) {
+                e.preventDefault();
+                });
+            });
+            </script>
+        <main>
+            
+        </main>
+
+
+    </body>
+
+
+</html>
