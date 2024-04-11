@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/jpg" href="images/icone.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/hmm.css">
+    <title>Connexion</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+</head>
+
+<body class="log_sign">
+
+    <nav class="barre_log_sign">
+        <div class="arrow" onclick="goBack()"></div>
+    </nav>
+    <form id="form_in" data-aos="fade-up" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+        <img id="logo_form" src="images/icone.jpg">
+        <h3 id="connexion">S'inscrire aux 24H du Mans</h3>
+        <p id="co_para">Inscrivez-vous avec votre compte 24H du Mans, pour bénéficer de quelques choses.</p>
+        <ul id="champ">
+            <div id="form1" class="affForm">
+                <li><label for="firstname">Prenom :</label>
+                    <input type="text" id="firstname" name="firstname" size="10" />
+                </li>
+
+                <li><label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" size="10" />
+                </li>
+
+                <li><label for="choix_sexe">Sexe :</label>
+                    <input list="sexe" id="choix_sexe" name="choix_sexe" />
+
+                    <datalist id="sexe">
+                  <option value="Homme"></option>
+                  <option value="Femme"></option>
+                  <option value="Helicopter de combat Mi-28N"></option>
+                  <option value="Eponge"></option>
+                  <option value="Steve"></option>
+                  <option value="Croissant"></option>
+                </datalist>
+                </li>
+
+                <li><label for="hair style">Coupe de cheveux :</label>
+                    <input list="hair" id="hair style" name="hair style" size="10" />
+
+                    <datalist id="hair">
+                        <option value="Buzz cut"></option>
+                        <option value="Dégradé dégradant"></option>
+                        <option value="Boule à Z"></option>
+                        <option value="Boucle"></option>
+                        <option value="Crète"></option>
+                        <option value="Queue de rat"></option>
+                        <option value="La coupe a R9"></option>
+                        <option value="Autre"></option>
+                      </datalist>
+                </li>
+            </div>
+
+            <div id="form2">
+                <li><label for="bday">Date de naissance :</label>
+                    <input type="date" id="bday" name="bday" min="1970-01-01" /> </li>
+
+                <li><label for="city">Ville de naissance :</label>
+                    <input type="text" id="city" name="city" size="10" />
+                </li>
+
+                <li><label for="codep">Code postale :</label>
+                    <input type="text" id="codep" name="codep" size="10" />
+                </li>
+
+                <li><label for="age">Age : <span id="demo"></span></label>
+                    <input type="range" id="age" name="age" min="0" max="150" />
+                </li>
+
+            </div>
+
+            <div id="form3">
+                <li><label for="appt">Ton réveil :</label>
+                    <input type="time" id="appt" name="appt" />
+                </li>
+                <fieldset>
+                    <legend>Vous attendez l'ouverture de la salle ?</legend>
+
+                    <div>
+                        <input class="radioin" type="radio" id="huey" name="drone" value="huey" checked />
+                        <label class="radio" for="huey">Oui je la</label>
+                    </div>
+
+                    <div>
+                        <input class="radioin" type="radio" id="dewey" name="drone" value="dewey" />
+                        <label class="radio" for="dewey">Non moi je suis coach</label>
+                    </div>
+
+                    <div>
+                        <input class="radioin" type="radio" id="louie" name="drone" value="louie" />
+                        <label class="radio" for="louie">Ca y est nous y est</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Vous attendez l'ouverture de la salle ?</legend>
+
+                    <div>
+                        <input class="radioin" type="radio" id="huey" name="drone" value="huey" checked />
+                        <label class="radio" for="huey">Oui je la</label>
+                    </div>
+
+                    <div>
+                        <input class="radioin" type="radio" id="dewey" name="drone" value="dewey" />
+                        <label class="radio" for="dewey">Non moi je suis coach</label>
+                    </div>
+
+                    <div>
+                        <input class="radioin" type="radio" id="louie" name="drone" value="louie" />
+                        <label class="radio" for="louie">Ca y est nous y est</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div id="form4">
+                <li><label for="ad_email">Email :</label>
+                    <input type="email" id="ad_email" pattern=".+@example\.com" size="30" />
+                </li>
+
+                <li><label for="pass">Mot de passe :</label>
+                    <input type="password" id="pass" name="pass" minlength="8" />
+                </li>
+
+                <li><label for="pass_confirme">Confirmez le mot de passe :</label>
+                    <input type="password" id="pass_confirme" name="pass_confirme" minlength="8" />
+                </li>
+            </div>
+        </ul>
+
+        <button type="button" class="next_button" onclick="slideLeft()">Suivant</button>
+        <button class="button disabled" for="form_in" disabled>Inscription</button>
+        <a class="compte" href="index_connexion.html">Vous avez un compte ?</a>
+    </form>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="animation.js"></script>
+
+    <main>
+
+    </main>
+
+
+</body>
+
+
+</html>
